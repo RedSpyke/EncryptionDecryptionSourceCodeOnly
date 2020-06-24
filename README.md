@@ -12,3 +12,31 @@ When starting the program, the necessary algorithm should be specified by an arg
 Remember that in case of shift algorithm you need to encode only English letters (from 'a' to 'z' as the first circle and from 'A' to 'Z' as the second circle i.e. after 'z' comes 'a' and after 'Z" comes 'A').
 
 To complete this stage, we recommend that you create a set of classes and interfaces for encryption and decryption algorithms.
+
+
+Examples:
+
+Example 1
+java Main -mode enc -in road_to_treasure.txt -out protected.txt -key 5 -alg unicode
+This command must get data from the file road_to_treasure.txt, encrypt the data with the key 5, create a file called protected.txt and write ciphertext to it.
+
+Example 2
+Input:
+java Main -mode enc -key 5 -data "Welcome to hyperskill!" -alg unicode
+Output: \jqhtrj%yt%m~ujwxpnqq&
+
+Example 3
+Input:
+java Main -key 5 -alg unicode -data "\jqhtrj%yt%m~ujwxpnqq&" -mode dec
+Output: Welcome to hyperskill!
+
+Example 4:
+Input:
+java Main -key 5 -alg shift -data "Welcome to hyperskill!" -mode enc
+Output: Bjqhtrj yt mdujwxpnqq!
+
+Example 5:
+Input:
+java Main -key 5 -alg shift -data "Bjqhtrj yt mdujwxpnqq!" -mode dec
+
+Output: Welcome to hyperskill!
