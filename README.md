@@ -1,9 +1,10 @@
 # Encryption-Decryption source code for the final stage of the project 
 
-https://hyperskill.org/profile/6924430
+Author: https://hyperskill.org/profile/6924430 
+
 JetBrains Academy - Java Developer branch - project Encryption - Decryption https://hyperskill.org/projects/46?goal=7
 
-Description
+Description: 
 Extend your program by adding different algorithms to encode/decode data. The first one would be shifting algorithm (it shifts each letter by the specified number according to its order in the alphabet in circle). The second one would be based on Unicode table, like in the previous stage.
 
 When starting the program, the necessary algorithm should be specified by an argument (-alg). The first algorithm should be named shift, the second one should be named unicode. If there is no -alg you should default it to shift.
